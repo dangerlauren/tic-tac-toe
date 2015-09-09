@@ -8,6 +8,8 @@ var firstPlayer
 var secondPlayer
 var emptySpace
 var turn = 0
+var squareX = []
+var squareO = []
 // var whoWon = function(){
 // 	var playerX = ;
 // 	var playerO = ;
@@ -21,76 +23,59 @@ alert("Player 1 select X or O");
 // if player 1 chooses X, else chooses O
 $("button.player").on("click", function (){
 	if ($(this).hasClass("playerX")) {
-		firstPlayer = "X"
-		turn = 1
-		alert("You chose X!");
+		firstPlayer = "X";
+		alert("You chose X! Pick an empty space to begin.");
+	}
+
+	else if ($(this).hasClass("playerO")){
+		turn = 1;
+		firstPlayer = "O";
+	alert("You chose O! Pick an empty space to begin.")
 	}
 
 	else {
-	firstPlayer = "O"
-	turn = 1
-	alert("You chose O!")
+
 	}
 	
 });
 
-// create buttons with listeners for the gameboard
-// all buttons should be blank, want the button text to change to either X or O upon click
+// switch between players
+
+// if (firstPlayer = "X") {
+
+// }
+
+
 $("button.squares").on("click", function (){
-	($(this).html("EMPTY"));
-	// if current turn is player1, clicked button should return X
-var gamePlay = (function(){
+	turn ++
 	if (turn % 2 === 0) {
-		player2
+	// console.log	
+	$(this).text("O");
+	}
+
+	else {
+	$(this).text("X");
 	}
 
 });
 
+function findWinner()
+{
+	if ($("#1").text()==="X" && ($("#2").text()==="X" && ($("#3").text()==="X") || ($("#4").text())==="X" && ($("#5").text())==="X" && ($("#6").text())==="X" || ($("#7").text())==="X" && ($("#8").text())==="X" && ($("#9").text())==="X" || ($("#1").text())==="X" && ($("#4").text())==="X" && ($("#7").text())==="X" || ($("#2").text())==="X" && ($("#5").text())==="X" && ($("#8").text())==="X" || ($("#3").text())==="X" && ($("#6").text())==="X" && ($("#9").text())==="X" || ($("#1").text())==="X" && ($("#5").text())==="X" && ($("#9").text())==="X" || ($("#3").text())==="X" && ($("#5").text())==="X" && ($("#7").text())==="X" ||
 
-	// if current turn is player2, clicked button should return O
-	// if player1 or player2 clicks a square that is already chosen
-	// alert("Please choose an empty space")
-	
-});
+		($("#1").text()==="O" && ($("#2").text()==="O" && ($("#3").text()==="O") || ($("#4").text())==="O" && ($("#5").text())==="O" && ($("#6").text())==="O" || ($("#7").text())==="O" && ($("#8").text())==="O" && ($("#9").text())==="O" || ($("#1").text())==="O" && ($("#4").text())==="O" && ($("#7").text())==="O" || ($("#2").text())==="O" && ($("#5").text())==="O" && ($("#8").text())==="O" || ($("#3").text())==="O" && ($("#6").text())==="O" && ($("#9").text())==="O" || ($("#1").text())==="O" && ($("#5").text())==="O" && ($("#9").text())==="O" || ($("#3").text())==="O" && ($("#5").text())==="O" && ($("#7").text())==="O"
+}
+
 
 // define variables for the winning combinations
-// if the following square combinations: 
-// [1,2,3], [4,5,6], [7,8,9], [1,4,7], [2,5,8], [3,6,9], [1,5,9], [3,5,7] 
-// have all X or all O, then alert appropriate winner
+
 
 // define variable for tie game
 // if no winning combinations, then alert cat's draw
 
+// make sure player cannot click on a square that has been chosen
+
 // create a function to reset and start a new game
-
-
-// #########  MISC  ########### 
-
-// $("button.player").on("click", function (){
-// 	if ($(this).hasClass("playerO")) {
-// 	alert("You chose O!");
-// 	};
-// });
-
-// depending upon choice of player 1, first box clicked will be X or O
-// $("button.playerX").on("click", function(){
-// 	firstPlayer = "X"
-// 	turn = 1
-// });
-
-// $("button.playerO").on("click", function(){
-// 	firstPlayer = "O"
-// 	turn = 2
-// });
-
-// var game = (function () {
-// 	var playerX = ();
-// 	var playerO = ();
-
-// var findWinner = function(){
-// 	var waysToWin = [ [1 ,2 ,3], [4, 5, 6], [7, 8, 9], [1, 4, 7], [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7]],
-// }
-// });
 
 
 // call playGame function
