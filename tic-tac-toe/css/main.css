@@ -1,8 +1,31 @@
-h1 {
+@import url(http://fonts.googleapis.com/css?family=Dosis);
+
+.page-header {
 	text-align: center;
+	font-family: 'Dosis', sans-serif;
+	color: white;
+	letter-spacing: 2em;
 }
 
-.gameBoxes {
-	text-align: center;
+body {
+	background: radial-gradient(red, black);
 }
 
+.gameBoard {
+	margin-top: 50px;
+}
+
+.squares {
+	padding: 2.5em 2.5em;
+	/*padding: 35px 35px;*/
+}
+
+.boxes {
+	text-align: center;
+	padding: 0px 0px;
+}
+
+.resetSection {
+	margin-top: 75px;
+	margin-bottom: 75px;
+}
