@@ -11,13 +11,22 @@ body {
 	background: radial-gradient(red, black);
 }
 
+.player {
+	padding: 2em 2em;
+}
+
+.playerX {
+	background-image: (tic-tac-toe/images/x_image.png) !important;
+}
+
 .gameBoard {
 	margin-top: 50px;
 }
 
 .squares {
 	padding: 2.5em 2.5em;
-	/*padding: 35px 35px;*/
+	font-family: 'Dosis', sans-serif;
+
 }
 
 .boxes {
