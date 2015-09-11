@@ -2,22 +2,47 @@
 
 .page-header {
 	text-align: center;
-	font-family: 'Dosis', sans-serif;
 	color: white;
 	letter-spacing: 2em;
 }
 
 body {
 	background: radial-gradient(red, black);
+	font-family: 'Dosis', sans-serif;
+}
+
+.welcome {
+	color: white;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.player {
+	font-size: 1.7em;
+	height: 60px;
+	background-color: black;
+	color: white;
+}
+
+.playerX:hover {
+	background-color: #999999;
+	color: black;	
+}
+
+.playerO:hover {
+	background-color: #999999;
+	color: black;	
 }
 
 .gameBoard {
-	margin-top: 50px;
+	margin-top: 25px;
 }
 
 .squares {
-	padding: 2.5em 2.5em;
-	/*padding: 35px 35px;*/
+	padding: 1.8em 2.55em;
+	font-size: 1.5em;
+	background-color: black;
+	color: white;
 }
 
 .boxes {
@@ -28,4 +53,22 @@ body {
 .resetSection {
 	margin-top: 75px;
 	margin-bottom: 75px;
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.75em;
 }
+
+.reset {
+	height: 50px;
+	background-color: black;
+	color: white;
+}
+
+.reset:hover {
+	background-color: #999999;
+	color: white;
+}
+
+/*@media (max-width: 500px) {
+.gameBoard {
+display: none;
+}*/
