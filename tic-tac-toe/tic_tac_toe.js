@@ -1,10 +1,6 @@
-test
 $(document).ready(function () {
 
-// function for the game
-	// var playGame = (function (){
-
-// define variables for player 1, player 2, winning combinations
+// define variables for player 1, player 2, turn variable to swith between, and move counter
 var firstPlayer
 var secondPlayer
 var emptySpace
@@ -15,7 +11,6 @@ moveCount = 0
 alert("Player 1 select X or O");
 
 // create buttons with listeners for the players
-
 // if player 1 chooses X, else chooses O
 
 $("button.player").on("click", function (){
@@ -36,9 +31,10 @@ $("button.player").on("click", function (){
 		
 });
 
-
-// switch between players
-$("button.squares").on("click", function (){
+// switch between players using turn and modulus (%)
+// make sure player cannot click on a square that has been chosen using .one
+// find a winner using a move count and calling function inside the turn function
+$("button.squares").one("click", function (){
 	turn ++
 	if (turn % 2 === 0) {
 		$(this).text("O");
@@ -119,15 +115,12 @@ function findWinner() {
 	else if ($("#3").text()==="O" && $("#5").text()==="O" && $("#7").text()==="O") {
 		alert("O is the winner!");
 	}
-// if no winning combinations, then alert cat's draw
+// if no winning combinations, use move counter, counting to 9, then alert cat's draw 
 	else if (moveCount >= 9) {
 		alert("It's a cat's draw!")
 	}
 	
 };
-
-
-// make sure player cannot click on a square that has been chosen
 
 // create a function to reset and start a new game
 	$("button.reset").click(function() {
