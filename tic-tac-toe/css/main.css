@@ -2,31 +2,30 @@
 
 .page-header {
 	text-align: center;
-	font-family: 'Dosis', sans-serif;
 	color: white;
 	letter-spacing: 2em;
 }
 
 body {
 	background: radial-gradient(red, black);
+	font-family: 'Dosis', sans-serif;
 }
 
 .player {
-	padding: 2em 2em;
+	font-size: 1.75em;
 }
 
-.playerX {
+/*.playerX {
 	background-image: (tic-tac-toe/images/x_image.png) !important;
-}
+}*/
 
 .gameBoard {
-	margin-top: 50px;
+	margin-top: 25px;
 }
 
 .squares {
-	padding: 2.5em 2.5em;
-	font-family: 'Dosis', sans-serif;
-
+	padding: 1.8em 2.55em;
+	font-size: 1.5em;
 }
 
 .boxes {
@@ -37,4 +36,6 @@ body {
 .resetSection {
 	margin-top: 75px;
 	margin-bottom: 75px;
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.75em;
 }
