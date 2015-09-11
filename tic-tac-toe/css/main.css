@@ -11,18 +11,27 @@ body {
 	font-family: 'Dosis', sans-serif;
 }
 
+.welcome {
+	color: white;
+	text-align: center;
+	font-size: 1.5em;
+}
+
 .player {
 	font-size: 1.7em;
+	height: 60px;
+	background-color: black;
+	color: white;
 }
 
 .playerX:hover {
-	background-color: black;
-	color: white;	
+	background-color: #999999;
+	color: black;	
 }
 
 .playerO:hover {
-	background-color: black;
-	color: white;	
+	background-color: #999999;
+	color: black;	
 }
 
 .gameBoard {
@@ -32,6 +41,8 @@ body {
 .squares {
 	padding: 1.8em 2.55em;
 	font-size: 1.5em;
+	background-color: black;
+	color: white;
 }
 
 .boxes {
@@ -46,7 +57,18 @@ body {
 	font-size: 1.75em;
 }
 
+.reset {
+	height: 50px;
+	background-color: black;
+	color: white;
+}
+
 .reset:hover {
 	background-color: #999999;
 	color: white;
 }
+
+/*@media (max-width: 500px) {
+.gameBoard {
+display: none;
+}*/
