@@ -1,3 +1,4 @@
+test
 $(document).ready(function () {
 
 // function for the game
